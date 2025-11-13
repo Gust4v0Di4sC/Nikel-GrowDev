@@ -29,14 +29,18 @@ A aplicação permite registrar **entradas e saídas de dinheiro**, ajudando o u
 
 ## 🧩 Estrutura do projeto
 
-Nikel/
+Public/
 │
 ├── index.html # Página principal
+├── home.html # Página inicial
+├── transactions.html # Pagina de transações
 ├── css/
 │ └── style.css # Estilos personalizados
 ├── js/
-│ └── script.js # Lógica do sistema
-├── img/ # Ícones e imagens do projeto
+│ └── index.js # Lógica do login e criação de conta
+│ └── home.js # Lógica da home
+│ └── transactions.js # Lógica do dashboard de transações
+├── assets/ # Ícones e imagens do projeto
 └── README.md # Documentação do projeto
 
 
@@ -50,4 +54,4 @@ Nikel/
 
     Acesse a pasta do projeto
 
-cd Nikel-GrowDev
+cd public
