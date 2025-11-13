@@ -35,14 +35,15 @@
                             <div class="col">
                                 <form id="login-form">
                                     <div class="mb-3">
-                                        <label class="mb-2" for="email-input">Email</label>
+                                        <label class="mb-2 fs-4 fw-semibold" for="email-input ">Email</label>
                                         <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp"
                                             placeholder="Enter email" required>
                                         <small id="emailHelp" class="form-text text-muted">Utilize seu e-mail para realizar o login</small>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="mb-2" for="password-input">Senha</label>
+                                        <label class="mb-2 fs-4 fw-semibold" for="password-input ">Senha</label>
                                         <input type="password" class="form-control" id="password-input" placeholder="Password">
+                                        <small class="error-message" id="messageError"></small>
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="session-check">
@@ -90,15 +91,15 @@
                     <div class="modal-body">
                          
                                     <div class="mb-3">
-                                        <label for="email-create-input" class="form-label">Email</label>
+                                        <label for="email-create-input" class="form-label fs-5">Email</label>
                                         <input type="email" class="form-control" id="email-create-input" aria-describedby="emailHelp"
                                             placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">Utilize seu e-mail para criar a conta</small>
+                                        <small id="emailHelper" class=" error-message">Utilize seu e-mail para criar a conta</small>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password-create-input">Senha</label>
-                                        <input type="password" class="form-control" id="password-create-input" placeholder="Password">
-                                        <small id="emailHelp" class="form-text text-muted">Utilize uma senha fácil de lembrar e anote para nao esquecer</small>
+                                        <label class="form-label fs-5" for="password-create-input ">Senha</label>
+                                        <input type="password" class="form-control " id="password-create-input" placeholder="Password">
+                                        <small id="passwordHelp" class="form-text error-message text-muted">Utilize uma senha fácil de lembrar e anote para nao esquecer</small>
                                     </div>
                                
                     </div>

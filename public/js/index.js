@@ -11,17 +11,22 @@ document.getElementById("login-form").addEventListener("submit", function(e){
     const email = document.getElementById("email-input").value;
     const password = document.getElementById("password-input").value;
     const checkSession = document.getElementById("session-check").checked;
+    const messageError = document.getElementById("messageError");
 
     const account = getAccount(email);
 
+    messageError.textContent = "";
+
     if (!account) {
-        alert("Opps! verifique o usuario ou a senha.");
+        messageError.textContent = "Opps! verifique o usuario ou a senha.";
+        messageError.classList.add("active");
         return;
     }
 
     if(account){
         if (account.password !== password) {
-            alert("Opps! Verifique o usuario ou a senha.");
+            messageError.textContent = "Opps! Verifique o usuario ou a senha.";
+            messageError.classList.add("active");
             return;
         }
 
@@ -38,14 +43,18 @@ document.getElementById("create-form").addEventListener("submit", function(e){
 
     const email = document.getElementById("email-create-input").value;
     const password = document.getElementById("password-create-input").value;
+    const messageEmail = document.getElementById("emailHelper");
+    const messagePassword = document.getElementById("passwordHelp");
 
     if (email.length < 26) {
-        alert("Preencha o campo com um e-mail válido.");
+        messageEmail.textContent = "Preencha o campo com um e-mail válido.";
+        messageEmail.classList.add("active");
         return;
     }
 
     if (password.length < 4) {
-        alert("Preencha a senha com no minimi 4 digitos");
+        messagePassword.textContent = "Preencha a senha com no minimo 4 digitos";
+        messagePassword.classList.add("active");
         return;
     }
 
