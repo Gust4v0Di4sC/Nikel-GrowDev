@@ -46,6 +46,8 @@ document.getElementById("create-form").addEventListener("submit", function(e){
     const messageEmail = document.getElementById("emailHelper");
     const messagePassword = document.getElementById("passwordHelp");
 
+
+
     if (email.length < 26) {
         messageEmail.textContent = "Preencha o campo com um e-mail válido.";
         messageEmail.classList.add("active");

@@ -85,7 +85,7 @@ function getCashIn(){
 
          for (let i = 0; i < limit; i++) {
             cashinHtml += `
-                <div class="row mb-4">
+                <div class="row mb-4 text-success">
                     <div class="col-12">
                         <h3 class="fs-2">${cashIn[i].value.toFixed(2)}</h3>
                         <div class="container p-0">
@@ -125,9 +125,9 @@ function getCashOut(){
 
          for (let i = 0; i < limit; i++) {
             cashinHtml += `
-                <div class="row mb-4">
+                <div class="row mb-4 text-danger">
                     <div class="col-12">
-                        <h3 class="fs-2">${cashIn[i].value.toFixed(2)}</h3>
+                        <h3 class="fs-2">-${cashIn[i].value.toFixed(2)}</h3>
                         <div class="container p-0">
                             <div class="row">
                                 <div class="col-12 col-md-8">
